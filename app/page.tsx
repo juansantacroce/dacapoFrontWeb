@@ -126,6 +126,59 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Nuestra Historia Section */}
+      <section id="nuestra-historia" className="py-20 md:py-32 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Image on left */}
+            <div className="relative">
+              <Image
+                src="/images/nuestraHistoria.webp"
+                alt="Nuestra Historia"
+                width={600}
+                height={400}
+                className="rounded-lg object-cover w-full h-full"
+              />
+            </div>
+            {/* Text on right with gradient overlay */}
+            <div className="relative p-8 -ml-8 md:-ml-16 bg-background md:bg-gradient-to-l from-background to-transparent">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">Nuestra Historia</h2>
+              <p className="text-xl text-muted-foreground">
+                Desde nuestros humildes comienzos, Dacapo ha sido un faro de educación musical, fundado con la visión de inspirar a futuras generaciones de músicos. Nuestra escuela se ha dedicado a fomentar el amor por la música, combinando la disciplina de la formación clásica con la alegría de la expresión personal. A lo largo de los años, hemos visto a innumerables estudiantes florecer, no solo como instrumentistas talentosos, sino como individuos apasionados y creativos.
+              </p>
+              <p className="mt-4 text-xl text-muted-foreground">
+                Nos enorgullece mantener viva la tradición de la excelencia, adaptándonos a los nuevos tiempos y ofreciendo un ambiente de aprendizaje enriquecedor donde cada nota cuenta y cada estudiante encuentra su propia voz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ubicación Section */}
+      <section id="ubicacion" className="py-20 md:py-32 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
+              Encuéntranos
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Estamos ubicados en el corazón de la ciudad, un espacio inspirador diseñado para el aprendizaje musical. ¡Te esperamos!
+            </p>
+          </div>
+          <div className="aspect-w-16 aspect-h-9 w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d212.711566373212!2d-64.22608682403332!3d-31.458592121520425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1752117412230!5m2!1ses!2sar"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section id="clases" className="py-20 md:py-32">
         <div className="container px-4 md:px-6">
@@ -233,17 +286,17 @@ export default function LandingPage() {
                 <h3 className="font-semibold mb-4">La Escuela</h3>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>
-                    <Link href="#" className="hover:text-primary transition-colors">
+                    <Link href="#nuestra-historia" className="hover:text-primary transition-colors">
                       Nuestra Historia
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-primary transition-colors">
+                    <Link href="#ubicacion" className="hover:text-primary transition-colors">
                       Ubicación
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="hover:text-primary transition-colors">
+                    <Link href="https://wa.me/543512446077?text=Hola,%20quiero%20inscribirme%20en%20Dacapo." target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                       Inscripciones
                     </Link>
                   </li>
