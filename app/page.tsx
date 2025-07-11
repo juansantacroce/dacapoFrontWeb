@@ -4,14 +4,11 @@ import { Badge } from "@/components/ui/badge"
 import {
   Music,
   Menu,
-  Instagram,
-  Facebook,
-  MessageCircle,
-  Mail,
   Music2,
   Music3,
   Music4,
 } from "lucide-react"
+import { FaWhatsapp, FaInstagram, FaTiktok, FaFacebook, FaYoutube, FaEnvelope } from 'react-icons/fa';
 import Image from "next/image"
 import Link from "next/link"
 
@@ -68,59 +65,97 @@ export default function LandingPage() {
 
         {/* Featured Cards */}
         <div className="container px-4 md:px-6 mt-16">
-          <div className="grid gap-8 md:grid-cols-3">
-            <Card className="border-border/40 hover:border-primary/60 transition-colors">
-              <CardHeader>
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* Card 1: Violín */}
+            <Card className="border-border/40 hover:border-primary/60 transition-colors flex flex-col md:flex-row">
+              <div className="md:w-1/3">
                 <Image
                   src="/images/violin.webp"
                   alt="Clases de Violín"
                   width={400}
-                  height={150}
-                  className="rounded-t-lg object-cover"
+                  height={250}
+                  className="rounded-t-lg md:rounded-l-lg md:rounded-t-none object-cover h-full"
                 />
-                <CardTitle className="text-2xl pt-4">Violín</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">
-                  Clases individuales y grupales para todos los niveles, desde iniciación hasta perfeccionamiento técnico y expresivo.
-                </CardDescription>
-              </CardContent>
+              </div>
+              <div className="md:w-2/3">
+                <CardHeader>
+                  <CardTitle className="text-2xl pt-4">Violín</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    Clases individuales y grupales para todos los niveles, desde iniciación hasta perfeccionamiento técnico y expresivo.
+                  </CardDescription>
+                </CardContent>
+              </div>
             </Card>
 
-            <Card className="border-border/40 hover:border-primary/60 transition-colors">
-              <CardHeader>
+            {/* Card 2: Piano */}
+            <Card className="border-border/40 hover:border-primary/60 transition-colors flex flex-col md:flex-row">
+              <div className="md:w-1/3">
                 <Image
                   src="/images/piano.webp"
                   alt="Clases de Piano"
                   width={400}
-                  height={150}
-                  className="rounded-t-lg object-cover"
+                  height={250}
+                  className="rounded-t-lg md:rounded-l-lg md:rounded-t-none object-cover h-full"
                 />
-                <CardTitle className="text-2xl pt-4">Piano</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">
-                  Un repertorio que abarca desde las grandes obras clásicas hasta los arreglos más modernos de música popular.
-                </CardDescription>
-              </CardContent>
+              </div>
+              <div className="md:w-2/3">
+                <CardHeader>
+                  <CardTitle className="text-2xl pt-4">Piano</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    Un repertorio que abarca desde las grandes obras clásicas hasta los arreglos más modernos de música popular.
+                  </CardDescription>
+                </CardContent>
+              </div>
             </Card>
 
-            <Card className="border-border/40 hover:border-primary/60 transition-colors">
-              <CardHeader>
+            {/* Card 3: Clases Online */}
+            <Card className="border-border/40 hover:border-primary/60 transition-colors flex flex-col md:flex-row">
+              <div className="md:w-1/3">
                 <Image
-                  src="/images/metodoSuzuki.webp"
-                  alt="Método Suzuki"
+                  src="/images/ilustracion5.webp"
+                  alt="Clases Online"
                   width={400}
-                  height={150}
-                  className="rounded-t-lg object-cover"
+                  height={250}
+                  className="rounded-t-lg md:rounded-l-lg md:rounded-t-none object-cover h-full"
                 />
-                <CardTitle className="text-2xl pt-4">Método Suzuki</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">
-                  Fomentamos el aprendizaje musical como un lenguaje, en un ambiente de apoyo y respeto mutuo entre alumnos y familias.
-                </CardDescription>
-              </CardContent>
+              </div>
+              <div className="md:w-2/3">
+                <CardHeader>
+                  <CardTitle className="text-2xl pt-4">Clases Online</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    Participa en nuestras clases sincrónicas desde cualquier parte del mundo con la misma calidad que una clase presencial.
+                  </CardDescription>
+                </CardContent>
+              </div>
+            </Card>
+
+            {/* Card 4: Ensambles */}
+            <Card className="border-border/40 hover:border-primary/60 transition-colors flex flex-col md:flex-row">
+              <div className="md:w-1/3">
+                <Image
+                  src="/images/ilustracion2.webp"
+                  alt="Ensambles"
+                  width={400}
+                  height={250}
+                  className="rounded-t-lg md:rounded-l-lg md:rounded-t-none object-cover h-full"
+                />
+              </div>
+              <div className="md:w-2/3">
+                <CardHeader>
+                  <CardTitle className="text-2xl pt-4">Ensambles</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    Aprende y crece junto a otros músicos en nuestros ensambles y clases de teoría musical grupales.
+                  </CardDescription>
+                </CardContent>
+              </div>
             </Card>
           </div>
         </div>
@@ -167,7 +202,7 @@ export default function LandingPage() {
           </div>
           <div className="aspect-w-16 aspect-h-9 w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d212.711566373212!2d-64.22608682403332!3d-31.458592121520425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1752117412230!5m2!1ses!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.3822644539923!2d-64.2261889!3d-31.458669099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3e68c4ce8a9%3A0xbd767e29ff9ab636!2sDacapo!5e0!3m2!1ses!2sar!4v1752247306915!5m2!1ses!2sar"
               width="100%"
               height="450"
               style={{ border: 0 }}
@@ -264,19 +299,22 @@ export default function LandingPage() {
               </p>
               <div className="flex space-x-4">
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Instagram className="h-5 w-5" />
+                  <FaWhatsapp className="h-5 w-5" />
                 </Link>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Facebook className="h-5 w-5" />
+                  <FaInstagram className="h-5 w-5" />
                 </Link>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Music className="h-5 w-5" />
+                  <FaTiktok className="h-5 w-5" />
                 </Link>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <MessageCircle className="h-5 w-5" />
+                  <FaFacebook className="h-5 w-5" />
                 </Link>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Mail className="h-5 w-5" />
+                  <FaYoutube className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <FaEnvelope className="h-5 w-5" />
                 </Link>
               </div>
             </div>
@@ -333,7 +371,7 @@ export default function LandingPage() {
           </div>
 
           <div className="border-t border-border/40 mt-12 pt-8 text-center text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Dacapo. Todos los derechos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} <a href="https://sauren.ar" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Sauren</a>. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
