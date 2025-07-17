@@ -6,6 +6,9 @@ import { cn } from '@/lib/utils';
 export const metadata: Metadata = {
   title: 'Dacapo',
   description: 'Escuela de Música',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
