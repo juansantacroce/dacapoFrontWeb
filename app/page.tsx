@@ -34,12 +34,14 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-24 items-center justify-between px-4 md:px-6">
           <div className="flex items-center space-x-4">
-            <Image
-              src="/images/logoDacapo.webp"
-              alt="Dacapo Logo"
-              width={80}
-              height={80}
-            />
+            <Link href="/">
+              <Image
+                src="/images/logoDacapo.webp"
+                alt="Dacapo Logo"
+                width={80}
+                height={80}
+              />
+            </Link>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
