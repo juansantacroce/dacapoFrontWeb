@@ -98,7 +98,7 @@ export default function LandingPage() {
               Formamos músicos que buscan trascender
             </Badge>
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-              El Arte de la Música,
+              El Arte de la Música,<br />
               <span className="text-primary">la Pasión de Enseñar</span>
             </h1>
             <h3 className="mb-6 text-xl font-bold tracking-tight sm:text-2xl md:text-3xl">
@@ -180,7 +180,7 @@ export default function LandingPage() {
             <Card className="border-border/40 hover:border-primary/60 transition-colors flex flex-col md:flex-row">
               <div id="clases-online" className="md:w-1/3">
                 <Image
-                  src="/images/ilustracion5.webp"
+                  src="/images/clases-online.webp"
                   alt="Clases Online"
                   width={400}
                   height={250}
@@ -205,7 +205,7 @@ export default function LandingPage() {
             <Card className="border-border/40 hover:border-primary/60 transition-colors flex flex-col md:flex-row">
               <div id="ensambles" className="md:w-1/3">
                 <Image
-                  src="/images/ilustracion2.webp"
+                  src="/images/ensambles.webp"
                   alt="Ensambles"
                   width={400}
                   height={250}
@@ -415,7 +415,7 @@ export default function LandingPage() {
                   <FaYoutube className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="mailto:gestion.dacapo@gmail.com"
+                  href="mailto:gestiondacapo@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <FaEnvelope className="h-5 w-5" />
