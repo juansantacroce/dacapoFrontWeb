@@ -298,22 +298,25 @@ export default function LandingPage() {
                 Formamos músicos que buscan trascender.
               </p>
               <div className="flex space-x-4">
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://wa.me/543512446077?text=Hola,%20quiero%20inscribirme%20en%20Dacapo." className="text-muted-foreground hover:text-primary transition-colors">
                   <FaWhatsapp className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://www.instagram.com/dacapo.musicos/?hl=es-la" className="text-muted-foreground hover:text-primary transition-colors">
                   <FaInstagram className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://www.tiktok.com/@dacapomusicos" className="text-muted-foreground hover:text-primary transition-colors">
                   <FaTiktok className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://www.facebook.com/profile.php?id=61560867586036" className="text-muted-foreground hover:text-primary transition-colors">
                   <FaFacebook className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://www.youtube.com/@DaCapo.Musicos" className="text-muted-foreground hover:text-primary transition-colors">
                   <FaYoutube className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="mailto:gestion.dacapo@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   <FaEnvelope className="h-5 w-5" />
                 </Link>
               </div>
